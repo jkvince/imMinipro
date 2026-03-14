@@ -18,7 +18,7 @@ void render_about_ImMini() {
                 ImGui::TableNextColumn();
                 ImGui::Text("Contributors:");
                 ImGui::TableNextColumn();
-                ImGui::TextLinkOpenURL("Github", "https://github.com/jkvince/im-test/graphs/contributors");
+                ImGui::TextLinkOpenURL("Github", "https://github.com/jkvince/imMinipro/graphs/contributors");
 
             ImGui::TableNextRow();
                 ImGui::TableNextColumn();
