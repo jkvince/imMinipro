@@ -1,0 +1,6 @@
+[submodule "lib/minipro"]
+	path = lib/minipro
+	url = https://gitlab.com/DavidGriffith/minipro.git
+[submodule "lib/nativefiledialog"]
+	path = lib/nativefiledialog
+	url = https://github.com/btzy/nativefiledialog-extended
