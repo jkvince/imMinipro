@@ -95,7 +95,8 @@ static inline void MenuDevices() {
 }
 
 static inline void MenuExtras() {
-    if (ImGui::MenuItem("Settings...")) {}
+    if (ImGui::MenuItem("Settings..."))
+        window_states.settingsOpen = true;
 }
 
 static inline void MenuAbout() {

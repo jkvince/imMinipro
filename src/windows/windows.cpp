@@ -7,20 +7,22 @@
 #include "modals.hpp"
 #include "manage-programmer.hpp"
 #include "device-list.hpp"
+#include "settings.hpp"
 
 
 window_states_t window_states = {
     false, // devicesOpen
-    false  // fileOpen
+    false, // fileOpen
+    false  // settingsOpen
 };
 
 
 void RenderWindows() {
-    if (window_states.devicesOpen == true) {
+    if (window_states.devicesOpen) {
         render_window_devices();
     }
 
-    if (window_states.fileOpen == true) {
+    if (window_states.fileOpen) {
         if (ImGui::Begin("File", &(window_states.fileOpen), ImGuiWindowFlags_NoCollapse)) {
 
             // TODO: add native file dialog
@@ -29,6 +31,10 @@ void RenderWindows() {
             ImGui::Text("more text");
             ImGui::End();
         }
+    }
+
+    if (window_states.settingsOpen) {
+        render_settings();
     }
 
     RenderManageProgrammerWindows();

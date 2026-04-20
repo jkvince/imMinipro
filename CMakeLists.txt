@@ -68,6 +68,7 @@ include_directories(${PROJECT_SOURCE_DIR}/src/modals/programmer)
 include_directories(${PROJECT_SOURCE_DIR}/src/windows)
 include_directories(${PROJECT_SOURCE_DIR}/src/windows/manage-programmer)
 include_directories(${PROJECT_SOURCE_DIR}/src/windows/device-list)
+include_directories(${PROJECT_SOURCE_DIR}/src/windows/settings)
 
 
 add_executable (imMinipro ${imgui_cpp} ${source_files})
